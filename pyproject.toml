@@ -1,0 +1,22 @@
+[project]
+name = "learning-tensorflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.9.2",
+    "notebook>=7.2.2",
+    "numpy>=1.26.4",
+    "tensorflow",
+]
+
+[tool.uv.sources]
+tensorflow = { url = "https://storage.googleapis.com/tensorflow/versions/2.16.2/tensorflow-2.16.2-cp312-cp312-macosx_10_15_x86_64.whl" }
+
+[dependency-groups]
+dev = [
+    "jupyter-client>=8.6.3",
+    "matplotlib-backend-wezterm>=2.1.2",
+    "pynvim>=0.5.1",
+]
